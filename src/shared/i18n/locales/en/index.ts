@@ -5,3 +5,9 @@ export const en = {
 	filter: filter,
 	'not-found': notFound
 } as const
+
+export default {
+	translation: {
+		...filter
+	}
+}

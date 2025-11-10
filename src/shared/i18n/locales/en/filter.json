@@ -1,1 +1,14 @@
-{}
+{
+	"modal": {
+		"title": "Filters",
+		"apply": "Apply",
+		"cancel": "Cancel",
+		"reset": "Reset"
+	},
+	"confirmation": {
+		"title": "Apply filters?",
+		"message": "Are you sure you want to apply these filters?",
+		"confirm": "Confirm",
+		"cancel": "Cancel"
+	}
+}
