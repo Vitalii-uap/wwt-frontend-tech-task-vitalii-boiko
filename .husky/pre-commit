@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+. "$HOME/.nvm/nvm.sh"
+nvm use 18
+
 . "$(dirname -- "$0")/_/husky.sh"
 
 npx lint-staged

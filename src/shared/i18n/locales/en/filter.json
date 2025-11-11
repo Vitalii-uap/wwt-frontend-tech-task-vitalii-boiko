@@ -1,14 +1,12 @@
 {
 	"modal": {
-		"title": "Filters",
+		"title": "Filter",
 		"apply": "Apply",
-		"cancel": "Cancel",
-		"reset": "Reset"
+		"clearAll": "Clear all parameters"
 	},
 	"confirmation": {
-		"title": "Apply filters?",
-		"message": "Are you sure you want to apply these filters?",
-		"confirm": "Confirm",
-		"cancel": "Cancel"
+		"title": "Do you want to apply new filter",
+		"useOld": "Use old filter",
+		"applyNew": "Apply new filter"
 	}
 }

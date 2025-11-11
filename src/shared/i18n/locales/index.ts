@@ -1,5 +1,10 @@
 import { en } from './en'
 
 export const resources = {
-	en: en
+	en: {
+		translation: {
+			...en.filter,
+			...en['not-found']
+		}
+	}
 } as const

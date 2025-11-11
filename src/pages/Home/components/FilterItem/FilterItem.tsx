@@ -12,31 +12,25 @@ export const FilterItem = ({
 	onOptionToggle
 }: FilterItemProps) => {
 	return (
-		<div className="mb-6">
-			<h3 className="text-lg font-semibold mb-2">{filter.name}</h3>
-			{filter.description && (
-				<p className="text-sm text-gray-600 mb-4">{filter.description}</p>
-			)}
-			<div className="space-y-2">
+		<div>
+			<h3 className="text-base font-semibold text-gray-900 mb-4">
+				{filter.name}
+			</h3>
+			<div className="grid grid-cols-3 gap-x-8 gap-y-4">
 				{filter.options.map(option => (
 					<label
 						key={option.id}
-						className="flex items-start space-x-3 cursor-pointer hover:bg-gray-50 p-2 rounded"
+						className="flex items-center gap-2.5 cursor-pointer group"
 					>
 						<input
 							type="checkbox"
 							checked={selectedOptions.includes(option.id)}
 							onChange={() => onOptionToggle(option.id)}
-							className="mt-1"
+							className="w-4 h-4 text-orange-500 border-gray-300 rounded focus:ring-orange-500 focus:ring-2 cursor-pointer accent-orange-500"
 						/>
-						<div className="flex-1">
-							<div className="font-medium">{option.name}</div>
-							{option.description && (
-								<div className="text-sm text-gray-600">
-									{option.description}
-								</div>
-							)}
-						</div>
+						<span className="text-sm text-gray-700 group-hover:text-gray-900 select-none">
+							{option.name}
+						</span>
 					</label>
 				))}
 			</div>
