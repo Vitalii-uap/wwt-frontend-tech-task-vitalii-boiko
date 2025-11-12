@@ -13,7 +13,7 @@ export const App = () => {
 		<section className="w-full min-h-dvh p-8">
 			<div className="max-w-4xl mx-auto">
 				<h1 className="text-6xl text-gray-600 mb-12 text-center">
-					WinWinTravel frontend test task
+					{t('title')}
 				</h1>
 
 				<div className="mb-8 text-center">
@@ -26,7 +26,7 @@ export const App = () => {
 				</div>
 
 				<div className="bg-gray-100 p-6 rounded-lg">
-					<h2 className="text-xl font-bold mb-4">Current Filters:</h2>
+					<h2 className="text-xl font-bold mb-4">{t('currentFilters')}</h2>
 					<pre className="bg-white p-4 rounded overflow-auto">
 						{JSON.stringify(filters, null, 2)}
 					</pre>
