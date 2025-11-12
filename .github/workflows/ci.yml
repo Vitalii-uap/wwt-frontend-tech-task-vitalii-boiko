@@ -28,6 +28,6 @@ jobs:
       - name: Lint
         run: pnpm run lint:file
       - name: Format check
-        run: pnpm run format:check
+        run: pnpm run format:check:all
       - name: Build
         run: pnpm run build
